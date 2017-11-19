@@ -1,0 +1,195 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.app-header {
+  height: 50px;
+  background-color: rgb(25, 131, 4);
+  padding: 0 20px 0 20px;
+}
+
+.app-header_logo {
+  color: white;
+  font-size: 2.5em;
+}
+
+.sensor-actions {
+  display: flex;
+  padding: 10px;
+  border: 1px solid #eee;
+  margin-top:20px;
+}
+
+.sensor-action_error {
+  color: red;
+  margin-left:10px;
+}
+
+.input_container {
+  margin-right: 10px;
+}
+
+.input_label {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.sensor-list {
+  min-width: 100%;
+  margin-top:20px;
+}
+
+.sensor-list_header {
+  font-weight: bold;
+  padding: 0 10px 5px 10px;
+  text-align: left;
+}
+
+.sensor-list_body {
+  border: solid #ccc 1px;
+  padding: 10px;;
+  text-align: left;
+  vertical-align: top;
+}
+
+.sensor-list_body:first-of-type {
+  width: 50px;
+}
+
+.sensor-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sensor-details_name {
+  font-weight: bold;
+  width:100%;
+  flex-grow: 2;
+}
+.sensor-details_type,
+.sensor-details_ip {
+  width:50%;
+  color: #aaa;
+}
+
+.sensor-status {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  max-height:40px;
+}
+
+.sensor-status.error .sensor-status_icon {
+  background-color: red;
+}
+
+.sensor-status.warning .sensor-status_icon {
+  background-color: orange;
+}
+
+.sensor-status.ok .sensor-status_icon {
+  background-color: green;
+}
+
+.sensor-status_icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.sensor-status_message {
+  height: 20px;
+}
+
+.sensor-status_description {
+  height: 20px;
+}
+
+.sensor-details_input:after {
+  content: '\2610';
+  font-size: 2em;
+  color:black;
+}
+
+.sensor-details_input.selected:after {
+  content: '\2611'
+}
+
+.error-panel_container{
+  min-height: 86px;
+  padding: 10px 20px 0 20px;
+}
+
+.error-panel {
+  margin-bottom: 10px;
+}
+
+.error-panel.error{
+  background-color: rgb(245, 156, 156);
+  border: 1px solid red;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+.error-panel.warning{
+  background-color: rgb(235, 133, 85);
+  border: 1px solid orange;
+  border-radius: 2px;
+  padding: 10px;
+}
