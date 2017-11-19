@@ -9,9 +9,15 @@ To start the app run
 
 ```npm start```
 
+The command line will need you to agree to what port you are using (mostlikely localhost:3001). It should open a browser window automatically.
+
+It assumes the api is running on localhost:3000 and will try to connecto to that address. 
+
 To run any tests 
 
 ```npm test```
+
+
 
 ### Design
 The MicroSense app is built with react.js using the create react app for project setup.
